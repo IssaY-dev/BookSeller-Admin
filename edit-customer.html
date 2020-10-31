@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+</head>
+<body>
+    <nav class="navbar has-shadow">
+        <div class="navbar-brand">
+            <a class="navbar-item">
+                <img src="images/logo.png">
+            </a>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item">
+                    <small>Lorem ipsum dolor sit.</small>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <div class="navbar-link">
+                        Issa Yusuf
+                    </div>
+
+                    <div class="navbar-dropdown">
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span class="icon is-small">
+                                    <i class="fa fa-user-circle-o"></i>
+                                </span>
+                                Profile
+                            </div>
+                        </a>
+
+                        <a href="#" class="navbar-item">
+                            <div>
+                                <span class="icon is-small">
+                                    <i class="fa fa-bug"></i>
+                                </span>
+                                Report a bug
+                            </div>
+                        </a>
+
+                        <a href="#" class="navbar-item">
+                            <span class="icon is-small">
+                                <i class="fa fa-sign-out"></i>
+                            </span>
+                            Sign Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-5-tablet is-4-desktop is-3-widescreen">
+                <div class="menu">
+                    <p class="menu-label">
+                        Menu
+                    </p>
+                    <ul class="menu-list">
+                        <li>
+                            <a href="index.html">
+                                <span class="icon">
+                                    <i class="fa fa-tachometer"></i>
+                                </span>
+                                Dashboard
+                            </a>
+
+                            <a href="books.html">
+                                <span class="icon">
+                                    <i class="fa fa-book"></i>
+                                </span>
+                                Books
+                            </a>
+
+
+                            <a href="customers.html" class="is-active">
+                                <span class="icon">
+                                    <i class="fa fa-address-book"></i>
+                                </span>
+                                Customers
+                            </a>
+
+                            <a href="orders.html">
+                                <span class="icon">
+                                    <i class="fa fa-file-text-o"></i>
+                                </span>
+                                Orders
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="column">
+                <nav class="breadcrumb">
+                    <ul>
+                        <li>
+                            <a href="books.html">Customers</a>
+                        </li>
+                        <li class="is-active">
+                            <a href="new-book.html">Edit customer</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <form>
+                    <div class="field">
+                        <label class="label">Full name</label>
+                        <div class="control">
+                            <input type="text" class="input is-large" placeholder="e.g. Issa Yusuf" value="Issa Yusuf" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control has-icons-left">
+                            <input type="email" class="input" placeholder="e.g. IssaYusuf@gmail.com" value="issaYusuf@gmail.com" required>
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Address</label>
+                        <div class="control">
+                            <input type="text" class="input" placeholder="Number and street name" value="19 Stockyard Street" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="control">
+                            <input type="text" class="input" placeholder="Second address line (Optional)">
+                        </div>
+                    </div>
+
+                    <div class="columns is-multiline">
+                        <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                            <label class="label">Postcode / Zipcode</label>
+                            <div class="control">
+                                <input type="number" class="input" placeholder="e.g. 3029" value="3029" required>
+                            </div>
+                        </div>
+                        <div class="column is-12-tablet is-6-desktop is-4-widescreen">
+                            <label class="label">City</label>
+                            <div class="contro">
+                                <input type="text" class="input" placeholder="e.g. Melbourne" value="Melbourne">
+                            </div>
+                        </div>
+
+                        <div class="column is-12-tablet is-desktop is-4-widescreen">
+                            <label class="label">Country</label>
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>-- Choose a Country --</option>
+                                        <option selected>Australia</option>
+                                        <option>New Zealand</option>
+                                        <option>Canada</option>
+                                        <option>United States</option>
+                                        <option>United Kingdom</option>
+                                        <option>Somalia</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="field">
+                        <div class="buttons">
+                            <button class="button is-medium is-success">Save changes</button>
+                            <button class="button is-medium is-light">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>  
+        </div>
+    </section>
+
+
+</body>
+</html>
